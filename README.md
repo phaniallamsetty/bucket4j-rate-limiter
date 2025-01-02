@@ -9,4 +9,7 @@ For testing, I have set 10 as the maximum tokens allowed and we are adding 10 ne
 - It returns "Here is your data!" as response.
 - Repeatedly call the API 10 times. After the 10th time, it will throw the RateLimitExceededException with the message "Too Many Requests" which means any further calls within the span of a minute will be rate limited and will not be allowed.
 
-The repository also has logic to containerize the application using Docker, build it using GitHub Actions, and deploy to GKE.
+The repository also has DevOps related changes such as:
+- Containerizing the application (Docker)
+- Building the application
+- Deploying to GKE (In Progress)
