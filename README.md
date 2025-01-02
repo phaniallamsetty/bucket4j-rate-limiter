@@ -8,3 +8,5 @@ For testing, I have set 10 as the maximum tokens allowed and we are adding 10 ne
 - Once the application is running, use Postman or curl command to make a call to http://localhost:8080/api/getData
 - It returns "Here is your data!" as response.
 - Repeatedly call the API 10 times. After the 10th time, it will throw the RateLimitExceededException with the message "Too Many Requests" which means any further calls within the span of a minute will be rate limited and will not be allowed.
+
+The repository also has logic to containerize the application using Docker, build it using GitHub Actions, and deploy to GKE.
